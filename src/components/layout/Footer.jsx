@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
-import * as Images from "../assets/images/index";
+import * as Images from "../../assets/images/index";
 // import ZebecPrivacyPolicyPdf from "../products/zebec-card/ZebecPrivacyPolicy.pdf";
 
 const Footer = () => {

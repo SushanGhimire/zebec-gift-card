@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import * as Videos from "../assets/video/index";
+import * as Videos from "../../assets/video/index";
 
 const FooterAnimatedLoop = () => {
   return (
