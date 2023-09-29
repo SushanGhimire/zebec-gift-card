@@ -78,7 +78,7 @@
   [multiple],
   textarea,
   select {
-    @apply font-inter px-5 py-3 w-full rounded-xl placeholder-gray-dark focus:outline-none transition duration-200 focus:border-dark-light focus:bg-white focus:ring-0 border border-border;
+    @apply rounded-[3px] border border-[#AEB0B0] py-[9px] px-[19px] w-full focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary;
   }
   [type="checkbox"] {
     @apply font-inter rounded w-5 h-5 border-gray-400 transition text-blue-medium focus:ring-blue-400;
@@ -714,3 +714,25 @@ input:active {
 .home-hero-gradient{
   background: linear-gradient(253deg, #DFDFDF 13.23%, #CCEBE0 95.31%);
 }
+
+
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 5px dotted #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 

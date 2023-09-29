@@ -239,25 +239,41 @@ const Navbar = () => {
           );
         } else {
           return (
-            <NavLink
-              to={{
-                pathname: child.path,
-                state: {
-                  name: childrenObject.name,
-                },
-              }}
-              key={child.name}
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-primary" : ""
-                } text-body hover:text-primary font-ppmori text-darkish mb-1`
-              }
-            >
-              <div className="flex flex-col">
-                {child.name}
-                <div className="text-primary">{child.icon}</div>
-              </div>
-            </NavLink>
+            <>
+              {child.name === "Zebec Card" ? (
+                <NavLink
+                  to={{
+                    pathname: child.path,
+                    state: {
+                      name: childrenObject.name,
+                    },
+                  }}
+                  key={child.name}
+                  className={({ isActive }) =>
+                    `${
+                      isActive ? "text-primary" : ""
+                    } text-body hover:text-primary font-ppmori text-darkish mb-1`
+                  }
+                >
+                  <div className="flex flex-col">
+                    {child.name}
+                    <div className="text-primary">{child.icon}</div>
+                  </div>
+                </NavLink>
+              ) : (
+                <a
+                  href={child.path}
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-body hover:text-primary font-ppmori text-darkish mb-1"
+                >
+                  <div className="flex flex-col">
+                    {child.name}
+                    <div className="text-primary">{child.icon}</div>
+                  </div>
+                </a>
+              )}
+            </>
           );
         }
       });
@@ -375,7 +391,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`transition-all duration-300 ease-in-out overflow-hidden h-0 opacity-0 ${
+          className={`transition-all duration-300 ease-in-out overflow-hidden h-0 opacity-0 hidden lg:block ${
             openParent.open
               ? "h-[106px]  border-b border-grey-light opacity-100"
               : ""
