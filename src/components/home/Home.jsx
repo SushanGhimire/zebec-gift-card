@@ -1,4 +1,5 @@
 import React from "react";
+import EasySetUp from "./integrate/EasySetUp";
 import HeroSection from "./integrate/HeroSection";
 import SendCrypto from "./integrate/SendCrypto";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <SendCrypto />
+      <EasySetUp />
     </div>
   );
 };
