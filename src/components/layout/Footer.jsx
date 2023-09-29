@@ -22,36 +22,39 @@ const Footer = () => {
                 <p className="text-body text-grey-light font-ppmori">
                   Products:
                 </p>
-                {/* <NavLink
-                  to="/products/zebec-card"
-                  className="text-body text-white hover:text-primary font-ppmori"
-                >
-                  Zebec Card
-                </NavLink> */}
-                <NavLink
-                  to="/products/revolutionizing-payroll"
+
+                <a
+                  href="https://zebec.io/products/revolutionizing-payroll"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-body text-white hover:text-primary font-ppmori"
                 >
                   Payment Streams
-                </NavLink>
-                <NavLink
-                  to="/products/zebec-safes"
+                </a>
+                <a
+                  href="https://zebec.io/products/zebec-safes"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-body text-white hover:text-primary font-ppmori"
                 >
                   Zebec Safes
-                </NavLink>
-                <NavLink
-                  to="/products/web3-banking"
+                </a>
+                <a
+                  href="https://zebec.io/products/web3-banking"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-body text-white hover:text-primary font-ppmori"
                 >
                   Web 3 Banking
-                </NavLink>
-                <NavLink
-                  to="/zebec-labs"
+                </a>
+                <a
+                  href="https://zebec.io/zebec-labs"
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-body text-white hover:text-primary font-ppmori"
                 >
                   Zebec Labs
-                </NavLink>
+                </a>
               </div>
               <div className="flex flex-col gap-y-2">
                 {/* Docs */}

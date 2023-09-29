@@ -13,25 +13,25 @@ export const routes = [
     children: [
       {
         name: "Zebec Card",
-        path: "/products/zebec-card",
+        path: "/",
         icon: <Icons.ZebecCardIcon className="w-8 h-8" />,
         isAnchor: false,
       },
       {
         name: "Payment Streams",
-        path: "/products/revolutionizing-payroll",
+        path: "https://zebec.io/products/revolutionizing-payroll",
         icon: <Icons.PayrollIcon className="w-8 h-8" />,
         isAnchor: false,
       },
       {
         name: "Zebec Safes",
-        path: "/products/zebec-safes",
+        path: "https://zebec.io/products/zebec-safes",
         icon: <Icons.TreasuryIcon className="w-8 h-8" />,
         isAnchor: false,
       },
       {
         name: "Web3 Banking",
-        path: "/products/web3-banking",
+        path: "https://zebec.io/products/web3-banking",
         icon: <Icons.Web3Icon className="w-8 h-8" />,
         isAnchor: false,
       },
