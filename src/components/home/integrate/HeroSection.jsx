@@ -3,7 +3,7 @@ import { HeroImg } from "../../../assets/images";
 
 const HeroSection = () => {
   return (
-    <div className="h-[calc(100vh-95px)] home-hero-gradient web-padding">
+    <div className="lg:h-[calc(100vh-95px)] home-hero-gradient web-padding">
       <div className="flex flex-col lg:flex-row h-full text-center lg:text-left">
         {/* left content  */}
         <div className="flex-1 flex flex-col justify-end pb-6 pt-12">
