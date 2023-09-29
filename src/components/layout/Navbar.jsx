@@ -103,26 +103,44 @@ const MobileNavDropdown = ({ route, openParent, setIsMenuToggled }) => {
           );
         } else {
           return (
-            <NavLink
-              to={{
-                pathname: child.path,
-                state: {
-                  name: childrenObject.name,
-                },
-              }}
-              onClick={() => {
-                setIsMenuToggled(false);
-                setToggleMenu(false);
-              }}
-              key={child.name}
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-primary" : ""
-                } text-body hover:text-primary font-ppmori text-darkish mb-2`
-              }
-            >
-              <div className="flex flex-col">{child.name}</div>
-            </NavLink>
+            <>
+              {child.name === "Zebec Card" ? (
+                <NavLink
+                  to={{
+                    pathname: child.path,
+                    state: {
+                      name: childrenObject.name,
+                    },
+                  }}
+                  onClick={() => {
+                    setIsMenuToggled(false);
+                    setToggleMenu(false);
+                  }}
+                  key={child.name}
+                  className={({ isActive }) =>
+                    `${
+                      isActive ? "text-primary" : ""
+                    } text-body hover:text-primary font-ppmori text-darkish mb-2`
+                  }
+                >
+                  <div className="flex flex-col">{child.name}</div>
+                </NavLink>
+              ) : (
+                <a
+                  href={child.path}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => {
+                    setIsMenuToggled(false);
+                    setToggleMenu(false);
+                  }}
+                  key={child.name}
+                  className={`text-body hover:text-primary font-ppmori text-darkish mb-2`}
+                >
+                  <div className="flex flex-col">{child.name}</div>
+                </a>
+              )}
+            </>
           );
         }
       });
