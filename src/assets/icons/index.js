@@ -8,8 +8,10 @@ import { ReactComponent as CheveronDownIcon } from "./cheveron-down.svg";
 import { ReactComponent as BuyGiftIcon } from "./buy-gift.svg";
 import { ReactComponent as SignUpIcon } from "./sign-up.svg";
 import { ReactComponent as VirtualGiftIcon } from "./virtual-gift.svg";
+import { ReactComponent as LoadingIcon } from "./loading.svg";
 
 export {
+  LoadingIcon,
   BuyGiftIcon,
   SignUpIcon,
   VirtualGiftIcon,
