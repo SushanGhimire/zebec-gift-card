@@ -13,11 +13,15 @@ const SignupForm = ({ closeModal }) => {
   } = useForm();
   const [loading, setLoading] = useState(false);
   const onSubmit = async (data) => {
+    const formData = {
+      ...data,
+      middleName: "",
+    };
     try {
       setLoading(true);
       await axios.post(
         `https://boj3ssjjla.execute-api.us-east-2.amazonaws.com/stage/cardwaitlist`,
-        data
+        formData
       );
       toast.success("Signed up for updates.", {
         position: "top-right",

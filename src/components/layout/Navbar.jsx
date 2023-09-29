@@ -391,7 +391,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`transition-all duration-300 ease-in-out overflow-hidden h-0 opacity-0 hidden lg:block ${
+          className={`lg:transition-all lg:duration-300 lg:ease-in-out overflow-hidden h-0 opacity-0 hidden lg:block ${
             openParent.open
               ? "h-[106px]  border-b border-grey-light opacity-100"
               : ""
