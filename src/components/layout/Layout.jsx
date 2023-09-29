@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="font-ppmori">
       <Navbar />
-      <main>{children}</main>
+      <main className="">{children}</main>
       <FooterAnimatedLoop />
       <Footer />
     </div>

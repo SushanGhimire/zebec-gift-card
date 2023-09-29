@@ -243,6 +243,9 @@ h5 {
 .error {
   @apply font-inter text-red font-medium text-sm leading-4 mt-1;
 }
+.web-padding{
+  @apply 2xl:px-16 xl:px-14 lg:px-10 px-5
+}
 
 /* Custom CSS */
 .-tracking-wide {
@@ -278,87 +281,6 @@ h5 {
   letter-spacing: -0.0075em;
   padding: 12px 14px;
 }
-/* Table Design */
-.incoming-table thead,
-.outgoing-table thead,
-.activity-table thead,
-.address-book-table thead,
-.treasury-pending-table thead,
-.treasury-history-table thead,
-.safe-overview-coins-table thead,
-.coins-table thead {
-  font-size: 11px;
-  line-height: 18px;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-  letter-spacing: 0.01em;
-  color: #919191;
-  text-transform: uppercase;
-}
-.incoming-table tbody,
-.outgoing-table tbody,
-.activity-table tbody,
-.address-book-table tbody,
-.treasury-pending-table tbody,
-.treasury-history-table tbody,
-.safe-overview-coins-table tbody,
-.coins-table tbody {
-  border-radius: 12px;
-  box-shadow: 0 0 0 1px #ececec;
-  /* box-shadow: 0 0 0 1px #d2e5ff; */
-}
-.incoming-table tbody tr td,
-.outgoing-table tbody tr td,
-.activity-table tbody tr td,
-.address-book-table tbody tr td,
-.treasury-pending-table tbody tr td,
-.treasury-history-table tbody tr td,
-.safe-overview-coins-table tbody tr td,
-.coins-table tbody tr td {
-  background-color: #fff;
-}
-
-/* Making TBody Rounded */
-.incoming-table tbody tr:first-child td:first-child,
-.outgoing-table tbody tr:first-child td:first-child,
-.activity-table tbody tr:first-child td:first-child,
-.address-book-table tbody tr:first-child td:first-child,
-.treasury-pending-table tbody tr:first-child td:first-child,
-.treasury-history-table tbody tr:first-child td:first-child,
-.safe-overview-coins-table tbody tr:first-child td:first-child,
-.coins-table tbody tr:first-child td:first-child {
-  border-top-left-radius: 12px;
-}
-.incoming-table tbody tr:last-child td:first-child,
-.outgoing-table tbody tr:last-child td:first-child,
-.activity-table tbody tr:last-child td:first-child,
-.address-book-table tbody tr:last-child td:first-child,
-.treasury-pending-table tbody tr:last-child td:first-child,
-.treasury-history-table tbody tr:last-child td:first-child,
-.safe-overview-coins-table tbody tr:last-child td:first-child,
-.coins-table tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 12px;
-}
-.incoming-table tbody tr:first-child td:last-child,
-.outgoing-table tbody tr:first-child td:last-child,
-.activity-table tbody tr:first-child td:last-child,
-.address-book-table tbody tr:first-child td:last-child,
-.treasury-pending-table tbody tr:first-child td:last-child,
-.treasury-history-table tbody tr:first-child td:last-child,
-.safe-overview-coins-table tbody tr:first-child td:last-child,
-.coins-table tbody tr:first-child td:last-child {
-  border-top-right-radius: 12px;
-}
-.incoming-table tbody tr:last-child td:last-child,
-.outgoing-table tbody tr:last-child td:last-child,
-.activity-table tbody tr:last-child td:last-child,
-.address-book-table tbody tr:last-child td:last-child,
-.treasury-pending-table tbody tr:last-child td:last-child,
-.treasury-history-table tbody tr:last-child td:last-child,
-.safe-overview-coins-table tbody tr:last-child td:last-child,
-.coins-table tbody tr:last-child td:last-child {
-  border-bottom-right-radius: 12px;
-}
 
 .font-sf-compact {
   font-family: "SF Compact Display", sans-serif;
@@ -391,55 +313,14 @@ h5 {
   @apply space-y-1.5 flex flex-col mb-8;
 }
 
-/* New Website */
-.stream-button {
-  background: linear-gradient(46.19deg, #692de9 5.66%, #b112e9 94.35%),
-    linear-gradient(46.19deg, #7b61ff 5.66%, #59a0d2 49.09%, #29bb89 93.43%);
-  /* background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3f5ff6),
-    color-stop(62%, #8dc4fa),
-    to(#e9bbc4)
-  );
-  background-image: linear-gradient(90deg, #3f5ff6, #8dc4fa 62%, #e9bbc4); */
-}
+
 .learn {
   background: linear-gradient(46.19deg, #692de9 5.66%, #b112e9 94.35%);
 }
 .join-our {
   background: linear-gradient(46.19deg, #11a49b 5.66%, #90fc8e 94.35%);
 }
-.footer {
-  /* background: linear-gradient(
-    46.19deg,
-    #533561 5.66%,
-    #6c5b7b 49.09%,
-    #584357 93.43%
-  ); */
-  /* background: #fff; */
-}
 
-.hero-product-gradient-container {
-  width: 95%;
-  border-radius: 12 px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#3f5ff6),
-    color-stop(62%, #8dc4fa),
-    to(#e9bbc4)
-  );
-  background-image: linear-gradient(90deg, #3f5ff6, #8dc4fa 62%, #e9bbc4);
-  /* background: -webkit-linear-gradient(46.19deg, #692de9 5.66%, #b112e9 94.35%),
-    -webkit-linear-gradient(46.19deg, #7b61ff 5.66%, #59a0d2 49.09%, #29bb89
-          93.43%);
-  background: linear-gradient(46.19deg, #692de9 5.66%, #b112e9 94.35%),
-    linear-gradient(46.19deg, #7b61ff 5.66%, #59a0d2 49.09%, #29bb89 93.43%); */
-  opacity: 1;
-}
 
 .gradient-background {
   position: absolute;
@@ -488,41 +369,9 @@ h5 {
   -webkit-text-fill-color: transparent;
 }
 
-.news-link:hover {
-  color: rgb(105, 65, 198);
-}
 
 .backed-by-img {
   width: 10%;
-}
-.backed-by-img:first-child,
-.backed-by-img:last-child {
-  width: 55px;
-}
-@media screen and (max-width: 1080px) {
-  .just-ship-it-img {
-    left: 40%;
-  }
-  .backed-by-img {
-    width: 15%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .just-ship-it-img {
-    left: 20%;
-  }
-  .backed-by-img {
-    width: 20%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .backed-by-img {
-    width: 25%;
-  }
-}
-
-.box-gradient {
-  opacity: 0;
 }
 .box-gradient {
   position: absolute;
@@ -543,9 +392,7 @@ h5 {
   background-image: linear-gradient(90deg, #3f5ff6, #8dc4fa 62%, #e9bbc4);
 }
 
-.easy-to-stream-box-content:hover .box-gradient {
-  opacity: 1;
-}
+
 .gradient-text {
   background-image: -webkit-gradient(
     linear,
@@ -676,45 +523,6 @@ h5 {
     margin-top: 2em;
   }
 }
-
-/* Wallet Adapter Styling */
-.wallet-adapter-button.main-select,
-.wallet-adapter-button.connect-wallet {
-  transition: all ease-in 200ms;
-  height: 44px !important;
-  background: rgb(var(--color-primary)) !important;
-  /* border-radius: 6px !important; */
-  padding: 10px 24px 8px !important;
-  font-size: 18px !important;
-  line-height: 26px !important;
-  font-weight: 400 !important;
-  border: 0px solid grey !important;
-  color: var(--color-darkish) !important;
-  border-radius: 24px !important;
-  width: 100%;
-  justify-content: center;
-}
-.wallet-adapter-button.main-select:hover,
-.wallet-adapter-button.connect-wallet:hover {
-  color: var(--color-darkish) !important;
-}
-.wallet-adapter-button.main-select.is-connected {
-  padding: 10px 12px 8px 24px !important;
-  margin-right: 0.5px !important;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  width: auto !important;
-  /* justify-content: center; */
-}
-.wallet-adapter-button.main-select.is-connected:hover {
-  background: rgb(var(--color-primary)) !important;
-  color: var(--color-darkish) !important;
-}
-.wallet-adapter-button.connect-wallet {
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-}
-
 /* Disable Arrows in Input Type Number  */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -803,61 +611,6 @@ input {
 }
 input:active {
   transform: scale(0.99);
-}
-
-.stream-pause-btn:disabled .pause-info-icon {
-  display: block;
-}
-.stream-resume-btn:disabled .resume-info-icon {
-  display: block;
-}
-.stream-cancel-btn:disabled .cancel-info-icon {
-  display: block;
-}
-.incoming-withdraw-btn:disabled .incoming-withdraw-info-icon {
-  display: block;
-}
-
-/* Onboarding Modal Height */
-.onboarding-modal.step0 {
-  height: 456px;
-}
-.onboarding-modal.step1 {
-  height: 552px;
-}
-.onboarding-modal.step1.has-error-1 {
-  height: 572px;
-}
-.onboarding-modal.step1.has-error-2 {
-  height: 592px;
-}
-.onboarding-modal.step2 {
-  height: 412px;
-}
-
-/* No Wallet Connection - Connect Wallet Button */
-.wallet-adapter-button.no-wallet-connection-connect-wallet {
-  width: 100% !important;
-  background-color: #2a7dfb !important;
-}
-
-.wallet-disconnect-button-hidden {
-  display: none !important;
-}
-
-.notify-svg path:not(:nth-child(2)) {
-  fill: #262949;
-}
-.gradient-button-text {
-  @apply font-medium text-sm leading-5 text-white bg-dark-button rounded-lg px-4;
-}
-
-.pay-withcrypto-gradient {
-  background: linear-gradient(106.12deg, #834d9b 0%, #d04ed6 100%), #232323;
-}
-
-.reward-gradient {
-  background: linear-gradient(91.17deg, #9644b4 1%, #1dd2d2 99.79%), #232323;
 }
 
 .zebec-card-bg {
@@ -957,4 +710,7 @@ input:active {
   border: 1px solid rgba(20, 20, 20, 0.08);
   box-shadow: 0px 1px 4px rgba(20, 20, 20, 0.01),
     0px 2px 1px rgba(20, 20, 20, 0.01);
+}
+.home-hero-gradient{
+  background: linear-gradient(253deg, #DFDFDF 13.23%, #CCEBE0 95.31%);
 }
