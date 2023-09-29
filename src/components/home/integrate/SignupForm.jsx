@@ -15,7 +15,7 @@ const SignupForm = ({ closeModal }) => {
   const onSubmit = async (data) => {
     try {
       setLoading(true);
-      const res = await axios.post(
+      await axios.post(
         `https://boj3ssjjla.execute-api.us-east-2.amazonaws.com/stage/cardwaitlist`,
         data
       );
