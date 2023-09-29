@@ -12,7 +12,7 @@ export const routes = [
     path: "",
     children: [
       {
-        name: "Zebec Card",
+        name: "Zebec Gift Card",
         path: "/",
         icon: <Icons.ZebecCardIcon className="w-8 h-8" />,
         isAnchor: false,

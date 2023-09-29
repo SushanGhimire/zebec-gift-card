@@ -83,10 +83,10 @@ const MobileNavDropdown = ({ route, openParent, setIsMenuToggled }) => {
   const returnMobileChildrenComponent = (route) => {
     const childrenObject = route;
     if (childrenObject?.children.length > 0) {
-      return childrenObject.children.map((child) => {
+      return childrenObject.children.map((child, index) => {
         if (child.isAnchor) {
           return (
-            <div key={child.name} className="">
+            <div key={index} className="">
               <a
                 href={child.path}
                 target={`${child.extraLink ? "_blank" : ""}`}
@@ -116,7 +116,7 @@ const MobileNavDropdown = ({ route, openParent, setIsMenuToggled }) => {
                     setIsMenuToggled(false);
                     setToggleMenu(false);
                   }}
-                  key={child.name}
+                  key={index}
                   className={({ isActive }) =>
                     `${
                       isActive ? "text-primary" : ""
@@ -134,7 +134,7 @@ const MobileNavDropdown = ({ route, openParent, setIsMenuToggled }) => {
                     setIsMenuToggled(false);
                     setToggleMenu(false);
                   }}
-                  key={child.name}
+                  key={index}
                   className={`text-body hover:text-primary font-ppmori text-darkish mb-2`}
                 >
                   <div className="flex flex-col">{child.name}</div>
