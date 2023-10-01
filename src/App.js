@@ -1,5 +1,4 @@
 import Home from "./components/home/Home";
-import Layout from "./components/layout/Layout";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { Route, Routes } from "react-router-dom";
