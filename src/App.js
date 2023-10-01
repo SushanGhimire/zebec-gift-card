@@ -2,11 +2,25 @@ import Home from "./components/home/Home";
 import Layout from "./components/layout/Layout";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Layout>
-      <Home />
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route
+          path="*"
+          element={
+            <div className="w-full h-screen grid place-content-center">
+              <h1 className="text-9xl font-semibold text-red animate-bounce">
+                Error
+              </h1>
+            </div>
+          }
+        />
+      </Routes>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -19,7 +33,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-    </Layout>
+    </>
   );
 }
 
